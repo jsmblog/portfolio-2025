@@ -1,0 +1,15 @@
+.iconCareer {
+    width: 300px;
+}
+
+.list-tech {
+    text-align: justify;
+    align-self: flex-start;
+    line-height: 1.5;
+}
+@media screen and (max-width:768px) {
+    .list-tech {
+       font-size: .9rem;
+       line-height: 1.3; 
+    }
+}

@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Sanchez:ital@0;1&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  border: none;
+  background: none;
+  font-family: "Sanchez", serif;
+  font-weight: 400;
+  font-style: normal;
+  user-select: none;
+}
+:root {
+  --co-white :white;
+  --co-gray:#818080;
+  --co-back-gray :#ebebeb;
+  --co-back-gray-2 :#f9f9f9f1;
+  --co-back-gray-3 :#d4d2d0;
+  --co-back-gray-4 :#f9f7f4;
+  --co-back-gray-5 :#3d3c3c81;
+  --co-txt-dark :#dbe8fd;
+  --co-black-1:rgba(0, 0, 0, 0.934);
+  --co-black-2:rgba(0, 0, 0, 0.646);
+}
+* button {
+  cursor: pointer;
+  padding: .5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: .5rem;
+  border-radius: 10px;
+  text-align: center;
+}
+* button:hover {
+  filter: brightness(90%);
+  transition: .4s ease;
+}
+* input , * select{
+  border: 1px solid var(--co-back-gray);
+  padding: .2rem;
+  border-radius: 15px;
+}
+a {
+    text-decoration: underline;
+    color: var(--co-black-1);
+}
+textarea {
+  resize: none !important;
+}
+.fade-in {
+	-webkit-animation: fade-in 2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	        animation: fade-in 2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+@-webkit-keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

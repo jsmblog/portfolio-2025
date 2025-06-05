@@ -1,0 +1,131 @@
+.cont-sidebar {
+    position: relative;
+    width: 30vw;
+}
+
+.sidebar {
+    border-right: 1px solid var(--co-back-gray);
+    height: 100dvh;
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    background-color: var(--co-white);
+    padding: 0 .5rem;
+    z-index: 999;
+}
+
+.open-sidebar {
+    position: fixed;
+    left: .5rem;
+    top: .75rem;
+    border: 1px solid var(--co-back-gray);
+    width: 25px;
+    height: 25px;
+    background-color: var(--co-white);
+    font-size: 2rem;
+    border-radius: 50%;
+    z-index: 999;
+}
+
+.close-sidebar {
+    position: fixed;
+    left: 22vw;
+    top: 2rem;
+    border-radius: 50%;
+    border: 1px solid var(--co-back-gray);
+    width: 25px;
+    height: 25px;
+    background-color: var(--co-white);
+    font-size: 2rem;
+    z-index: 999;
+}
+
+.close-sidebar h5 {
+    margin-bottom: .25rem;
+    margin-left: .1rem;
+}
+
+.cont-flag {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    display: flex;
+    align-items: center;
+    gap: .3rem;
+    text-align: center;
+}
+
+.photo-perfil {
+    border-radius: 50%;
+    width: 110px;
+    height: 110px;
+    object-fit: cover;
+    object-position: top;
+}
+
+.rrss {
+    width: 18px;
+    height: 18px;
+}
+
+.sidebar button {
+    width: 80%;
+    color: var(--co-black-1);
+    border: 1.5px solid var(--co-black-1);
+    height: 45px;
+}
+
+.sidebar button:hover,
+.active {
+    background-color: var(--co-black-1);
+    transition: .4s ease-in;
+    color: var(--co-back-gray) !important;
+}
+
+.photo-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.social-media {
+    display: flex;
+    gap: 1rem;
+    margin-top: .5rem;
+}
+
+.photo-container h5 {
+    color: var(--co-gray);
+    text-decoration: underline;
+}
+
+@media screen and (max-width:768px) {
+    .cont-sidebar {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        background-color: var(--co-black-2);
+        z-index: 999;
+        
+    }
+
+    .sidebar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 60vw;
+        box-shadow: 6px 0 10px -5px var(--co-back-gray);
+    }
+
+    .close-sidebar {
+      left: 57vw;
+    }
+
+    .sidebar button {
+        font-size: .75rem;
+    }
+}
