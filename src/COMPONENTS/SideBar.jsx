@@ -15,7 +15,7 @@ const SideBar = ({ setActiveSection, activeSection }) => {
       
     
       return () => {
-        const widthScreen = window.innerWidth > 1024;
+        const widthScreen = window.innerWidth > 768;
         setIsOpenSidebar(widthScreen);
       }
     }, [])
