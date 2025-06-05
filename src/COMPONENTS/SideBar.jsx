@@ -31,7 +31,8 @@ const SideBar = ({ setActiveSection, activeSection }) => {
                             <h2>Jefferson Mera</h2>
                             <h5>jsmblog19@gmail.com</h5>
                             <div class="social-media">
-                                <img className='rrss' src={linkedin} alt="linkedin" /><img className='rrss' src={github} alt="github" />
+                                <a href="https://www.linkedin.com/in/jefferson-m-8194a8360?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noopener noreferrer"><img className='rrss' src={linkedin} alt="linkedin" /></a>
+                                <a href="https://github.com/jsmblog/" target="_blank" rel="noopener noreferrer"><img className='rrss' src={github} alt="github" /></a>
                             </div>
                         </div>
                         {btns?.map(({ key, label }) => (

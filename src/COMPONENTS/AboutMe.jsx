@@ -25,7 +25,13 @@ const AboutMe = () => {
     <section className='about-me fade-in'>
       <h1>¡ Hola ! Soy Jefferson Mera , {typingPhrases}</h1>
       <p className='description'>Como desarrollador, integro una combinación versátil de habilidades y tecnologías que me capacitan para llevar a cabo proyectos complejos con resultados excepcionales. Gracias a mi experiencia en diferentes plataformas y metodologías de trabajo, diseño soluciones innovadoras, optimizo procesos y garantizo entregas puntuales, siempre enfocado en la calidad y en la satisfacción del cliente.</p>
-      <a className='download-cv' href="#" target="_blank" rel="noopener noreferrer"><h5 >DESCARGAR CV ↓</h5></a>
+      <a className='download-cv'
+        href="/cv-jefferson-mera.pdf"
+        download="cv-jefferson-mera.pdf"
+        rel="noopener noreferrer">
+        <h5>DESCARGAR CV ↓</h5>
+      </a>
+
       <div className='skills'>
         {renderSkills('Backend')}
         {renderSkills('Frontend')}
